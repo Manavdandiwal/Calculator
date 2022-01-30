@@ -1,15 +1,29 @@
 * {
-    margin: 0;
     box-sizing: border-box;
     /*background-color: rgba(213, 239, 255, 0.822);*/
 }
+html  {
+    height:100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    height:100%;
+    width:auto;
+    margin:0;
+    padding:0;
+}
 
 .calculator{
-    margin: 4% auto;
-    width: 600px;
-    height: 800px;
+    margin: 5% auto;
+    width: 35%;
+    height: 70%;
     padding: 0;
     background-color: rgb(29, 29, 29);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 
 .keys{
@@ -85,4 +99,12 @@
 
 .zero{
     width: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+    .calculator{
+        width: 90%;
+        height: 50%;
+        margin: 20% auto;
+    }
 }
