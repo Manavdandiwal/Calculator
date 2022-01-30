@@ -57,10 +57,13 @@ for (let i = 0; i < allButtons.length; i++)
         {
             if (text === '=')
             {
-                let val = performOperation(numbers, currentOperation);
-                while (numbers.length != 0)
-                    numbers.pop();
-                numbers.push(val);
+                if (numbers.length > 1)
+                {
+                    let val = performOperation(numbers, currentOperation);
+                    while (numbers.length != 0)
+                        numbers.pop();
+                    numbers.push(val);
+                }
             }
 
             else
